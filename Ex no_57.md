@@ -1,28 +1,35 @@
+# EX 57 C function to perfom push,pop and peek functions in Stack using Linked List.( store char data in stack)
 
-AIM:
+## AIM:
 To write a C function to perfom push,pop and peek functions in Stack using Linked List.
 
-Algorithm:
-Start
-Define a structure Node with two fields:
-data (float type)
-next (pointer to the next node)
-Initialize top as NULL (empty stack).
-Push Operation:
-Create a new node.
-Assign the float value to data.
-Set next to top.
-Update top to point to the new node.
-Pop Operation:
-Check if top is NULL (stack is empty).
-If not, store top->data.
-Update top to top->next.
-Free the popped node’s memory.
-Peek Operation:
-Check if top is NULL.
-If not, display top->data.
-End
-Program:
+## Algorithm:
+
+
+1. **Start**  
+2. Define a structure `Node` with two fields:  
+   - `data` (float type)  
+   - `next` (pointer to the next node)  
+3. Initialize `top` as `NULL` (empty stack).  
+4. **Push Operation:**  
+   - Create a new node.  
+   - Assign the float value to `data`.  
+   - Set `next` to `top`.  
+   - Update `top` to point to the new node.  
+5. **Pop Operation:**  
+   - Check if `top` is `NULL` (stack is empty).  
+   - If not, store `top->data`.  
+   - Update `top` to `top->next`.  
+   - Free the popped node’s memory.  
+6. **Peek Operation:**  
+   - Check if `top` is `NULL`.  
+   - If not, display `top->data`.  
+7. **End**  
+
+
+
+## Program:
+```c program
 Developed by Dharshini M
 212222060044
 struct Node   
@@ -78,4 +85,13 @@ void peek()
 {
     printf("stack top:%c\n",head->data);
 }
+```
 
+## Output:
+
+![image](https://github.com/user-attachments/assets/384381c5-619c-4709-b504-328ec4313ed9)
+
+
+
+## Result:
+Thus the program was executed and the output was verified successfully.
